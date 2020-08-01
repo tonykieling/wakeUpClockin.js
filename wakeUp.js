@@ -1,7 +1,4 @@
 const axios = require("axios");
-// const url = "https://jsonplaceholder.typicode.com/posts/1";
-// const url = "http://example.com/movies.json";
-
 
 const getData = async() => {
   const url = "https://clockinjs.herokuapp.com/ping";
@@ -24,25 +21,19 @@ const defineInterval = () => {
 
 const wakeUpHeroku = () => {
   const getTime = defineInterval();
-  console.log("getTime ==", getTime);
-  // const interval = ((defineInterval()[0] >= 23) && (defineInterval()[1] >= 35)) ? 420 : 25;
-  const interval = ((getTime[0] >= 23) && (getTime[1] >= 20)) ? 1 : 2;
-  console.log("interval:::", interval)
+
+  //it will change the interval after 23:34 to 420 minutes (7 hours)
+  const interval = ((defineInterval()[0] >= 23) && (defineInterval()[1] >= 35)) ? 420 : 25;
+
   const oneMinute = 1000 * 60;
   const intervalInMinutes = interval * oneMinute;
 
-  getData(); // it runs for the first time
+  getData(); // it calls the function to reach the server
 
   //it will run each 'intervalInMinutes'
   const myTimer = setTimeout(() => {
-    // try{
-      // getData();
-    // } catch(e){
-    //   console.log("error E02: ", e.message || e);
-    // } finally{
-      clearTimeout(myTimer);
-      wakeUpHeroku();
-    // }
+    clearTimeout(myTimer);
+    wakeUpHeroku();
   }, intervalInMinutes);
 };
 
