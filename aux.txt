@@ -1,0 +1,18 @@
+Intl.DateTimeFormat().resolvedOptions().timeZone;
+  'America/Vancouver'
+new Date().toString().split("GMT")[1].split(" (")[0]
+  "-0700"
+
+
+const aestTime = new Date().toLocaleString("en-US", {timeZone: "Australia/Brisbane"});
+console.log('AEST time: '+ (new Date(aestTime)).toISOString())
+
+new Date().toLocaleString('en-GB', {timeZone: "America/Vancouver"});
+
+*** options in nodejs are limited, timeZone works.
+toLocaleString in Nodejs:
+ https://stackoverflow.com/questions/23199909/using-tolocalestring-in-node-js
+
+
+Convert date to another timezone in JavaScript
+https://stackoverflow.com/questions/10087819/convert-date-to-another-timezone-in-javascript
