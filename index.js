@@ -1,7 +1,7 @@
 const express = require("express");
 const wakeUp  = require("./wakeUp.js");
 
-const PORT    = 3456;
+const PORT    = process.env.PORT || 3456;
 const app     = express();
 
 app.listen(PORT, () => {
