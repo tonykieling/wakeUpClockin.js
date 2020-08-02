@@ -4,12 +4,12 @@
   "description": "This is a program to poke Clockin.js so it keeps stand up, at least from 7 to 24 o'clock (Vancouver).",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.2",
-    "express": "^4.17.1"
+    "axios": "^0.19.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
