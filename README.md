@@ -1,0 +1,1 @@
+This is a program to poke Clockin.js so it keeps stand up, at least from 7 to 24 o'clock (Vancouver).
