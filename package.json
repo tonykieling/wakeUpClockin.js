@@ -1,0 +1,25 @@
+{
+  "name": "wakeUp_clockin.JS",
+  "version": "1.0.0",
+  "description": "This is a program to poke Clockin.js so it keeps stand up, at least from 7 to 24 o'clock (Vancouver).",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonykieling/wakeUpClockin.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonykieling/wakeUpClockin.js/issues"
+  },
+  "homepage": "https://github.com/tonykieling/wakeUpClockin.js#readme"
+}
