@@ -3,9 +3,10 @@ const axios = require("axios");
 const getData = async() => {
   const url = "https://clockinjs.herokuapp.com/ping";
   try {
+    console.log(`###Going to send a ping at ${new Date().toLocaleString('en-GB', {timeZone: "America/Vancouver"})}`);
     const response = await axios.get(url);
     const data = response.data;
-    console.log(` => ${new Date().toLocaleString('en-GB', {timeZone: "America/Vancouver"})} - received data: ${data}`);
+    console.log(` => ${new Date().toLocaleString('en-GB', {timeZone: "America/Vancouver"})} - received data: ${data}\n`);
   } catch (e) {
     console.log("error E01: ", e.message || e);
   }

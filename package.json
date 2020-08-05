@@ -4,7 +4,8 @@
   "description": "This is a program to poke Clockin.js so it keeps stand up, at least from 7 to 24 o'clock (Vancouver).",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
